@@ -1,0 +1,54 @@
+/* webfont */
+@font-face {
+    font-family: 'gs';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+* { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; color: inherit; }
+img { vertical-align: top; object-fit: cover; }
+button { border: none; background: inherit; cursor: pointer; }
+
+/* index */
+html { overflow-x: hidden; }
+body { font-family: 'gs'; }
+ul::after, .cl::after { content: ""; clear: both; display: block; }
+.blind { font-size: 0; width: 0; height: 0; overflow: hidden; position: absolute; left: -99999999999px;}
+.fl { display: flex; justify-content: center; align-items: center; }
+.fld { flex-direction: column; }
+.fl::after { display: none; }
+
+/* header */
+header.fl { justify-content: space-between; padding: 20px; }
+
+/* index-main */
+#main a { background: url(../images/s7.jpg) no-repeat calc(0% + 180px); height: 865px; width: 100%; justify-content: flex-start; align-items: flex-end; padding-bottom: 40px; }
+#main a strong { color: #242021; font-size: 50px; margin-right: 120px; }
+#main a p { color: #595552; font-size: 36px; font-weight: bold; margin: 280px 120px 0 0; }
+
+/* index-mbnr */
+#mbnr .fl a { display: block; width: 100%; color: #fff; position: relative; }
+#mbnr .fl a img { width: 100%; }
+#mbnr .fl a p { font-size: 28px; position: absolute; top: 24px; left: 32px; }
+
+/* index-mprd */
+#mprd h2 { padding: 10px 12px; font-size: 28px; }
+#mprd .fl { margin-bottom: 150px; }
+#mprd .fl a { display: block; width: 100%; color: #fff; position: relative; }
+#mprd .fl a img { width: 100%; }
+#mprd .fl a p { width: 100%; font-size: 20px; font-weight: bold; text-align: center; color: #353439; position: absolute; bottom: 60px; }
+
+/* footer */
+footer { padding: 0 0 46px 12px; }
+footer .fl { justify-content: flex-start; font-size: 12px; color: #666; }
+footer .fl img { width: 100px; }
+footer .fl div { margin-left: 20px; padding-top: 6px; }
+footer .fl div address { font-style: normal; margin-bottom: 6px; }
+footer .fl div ul li { float: left; }
+footer .fl div ul li::after { content: "│"; margin: 0 14px; }
+footer .fl div ul li:last-child:after { display: none; }
+footer .fl div ul li a { line-height: 20px; }
